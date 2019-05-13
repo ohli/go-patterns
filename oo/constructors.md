@@ -3,7 +3,7 @@ Go doesn't support constructors, but constructor-like factory functions are easy
 
 ```go
 package matrix
-function New(rows, cols int) *matrix {
+func New(rows, cols int) *matrix {
     m := new(matrix)
     m.rows = rows
     m.cols = cols
